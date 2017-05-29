@@ -15,6 +15,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MealActivity" />
+        <activity android:name=".NapActivity" />
+        <activity android:name=".PottyActivity"></activity>
     </application>
 
 </manifest>
