@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">ChildActionTracker</string>
+    <string name="mealTime">Meal Time</string>
+    <string name="napButton">Nap Time</string>
+    <string name="pottyTime">Potty Training</string>
 </resources>

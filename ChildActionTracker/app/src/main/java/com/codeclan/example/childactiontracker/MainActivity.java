@@ -22,15 +22,23 @@ public class MainActivity extends AppCompatActivity {
         mealButton = (Button) findViewById(R.id.meal_button);
         napButton = (Button) findViewById(R.id.nap_button);
         pottyButton = (Button) findViewById(R.id.potty_button);
+    }
 
 
     public void onMealButtonClick(View button) {
         Intent intent = new Intent(this, MealActivity.class);
-        intent.putExtra("pageChoice",PageChoice.MEALS);
-        startActivity(intent)
+//        intent.putExtra("pageChoice", results);
+        startActivity(intent);
+    }
+    public void onNapButtonClick(View button) {
+        Intent intent = new Intent(this, NapActivity.class);
+//        intent.putExtra("pageChoice", results);
+        startActivity(intent);
     }
 
-
-
-}
+    public void onPottyButtonClick(View button) {
+        Intent intent = new Intent(this, PottyActivity.class);
+//        intent.putExtra("pageChoice", results);
+        startActivity(intent);
+    }
 }

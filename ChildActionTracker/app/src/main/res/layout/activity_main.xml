@@ -46,50 +46,53 @@
 
     <Button
         android:id="@+id/meal_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="97dp"
+        android:layout_height="54dp"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         android:onClick="onMealButtonClick"
-        android:text="Button"
+        android:text="@string/mealTime"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintHorizontal_bias="0.216"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/nap_button"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.436" />
+        app:layout_constraintVertical_bias="0.489" />
 
     <Button
         android:id="@+id/potty_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="114dp"
+        android:layout_height="54dp"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
-        android:text="Button"
+        android:onClick="onPottyButtonClick"
+        android:text="@string/pottyTime"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.818"
+        app:layout_constraintHorizontal_bias="0.578"
         app:layout_constraintLeft_toRightOf="@+id/nap_button"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.436" />
+        app:layout_constraintVertical_bias="0.489" />
 
     <Button
         android:id="@+id/nap_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
+        android:layout_width="85dp"
+        android:layout_height="56dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
         android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onNapButtonClick"
+        android:text="@string/napButton"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintVertical_bias="0.436" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.51"
+        app:layout_constraintHorizontal_bias="0.462" />
 
 </android.support.constraint.ConstraintLayout>
