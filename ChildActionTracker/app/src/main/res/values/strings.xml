@@ -5,4 +5,9 @@
     <string name="pottyTime">Potty Training</string>
     <string name="mealViewText">Input Meal Details</string>
     <string name="meal_text_view">Meal Details</string>
+    <string name="time_view">Enter Time (hh:mm)</string>
+    <string name="time_text">Enter time hh:mm</string>
+    <string name="mealTimeView">Enter time hh:mm</string>
+    <string name="mealTimeEdit">Enter Time hh:mm</string>
+    <string name="mealSaveButton">Save Details</string>
 </resources>

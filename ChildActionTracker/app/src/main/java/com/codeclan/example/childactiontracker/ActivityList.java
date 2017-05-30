@@ -27,7 +27,7 @@ public class ActivityList {
         mealResultList = new ArrayList<String>();
         mealResultList.add("All Eaten");
         mealResultList.add("Some Eaten");
-        mealResultList.add("None Eaten");
+        mealResultList.add("Not Eaten");
 
         napList = new ArrayList<String>();
         napList.add("Nap in car");
@@ -55,7 +55,7 @@ public class ActivityList {
     }
 
     public ArrayList<String> getMealResultList() {
-        return mealList;
+        return mealResultList;
     }
 
     public ArrayList<String> getNapList() {
