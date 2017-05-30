@@ -1,6 +1,8 @@
 <resources>
-    <string name="app_name">ChildActionTracker</string>
+    <string name="app_name">Harlequin Helper</string>
     <string name="mealTime">Meal Time</string>
     <string name="napButton">Nap Time</string>
     <string name="pottyTime">Potty Training</string>
+    <string name="mealViewText">Input Meal Details</string>
+    <string name="meal_text_view">Meal Details</string>
 </resources>
