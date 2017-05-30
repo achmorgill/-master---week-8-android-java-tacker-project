@@ -11,12 +11,12 @@ import static org.junit.Assert.*;
 public class ChildActivityTest {
 
 
-    ChildActivity childActivity;
+    ChildAction childActivity;
 
 
     @Before
     public void before() {
-         childActivity = new ChildActivity("12/05/17", "10:52","Breakfast","All");
+         childActivity = new ChildAction("12/05/17", "10:52","Breakfast","All");
     }
 
 

@@ -8,9 +8,9 @@ import static android.R.attr.action;
  * Created by user on 28/05/2017.
  */
 
-public class ChildActivity extends Action {
+public class ChildAction extends Action {
 
-    public ChildActivity(String currentDate, String currentTime, String activity, String activityResult) {
+    public ChildAction(String currentDate, String currentTime, String activity, String activityResult) {
 
         super(currentDate,currentTime,activity,activityResult);
     }

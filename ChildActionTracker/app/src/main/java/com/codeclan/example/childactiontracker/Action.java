@@ -9,13 +9,11 @@ import java.util.Date;
 
 public class Action {
 
-    SimpleDateFormat simpleDateFormatDate = new SimpleDateFormat("dd/MM/yy");
-    String currentDate = simpleDateFormatDate.format(new Date());
-    SimpleDateFormat simpleDateFormatTime = new SimpleDateFormat("hh:mm");
-    String currentTime = simpleDateFormatTime.format(new Date());
 
     private String activity;
     private String activityResult;
+    private String currentTime;
+    private String currentDate;
 
 
     public Action (String currentDate, String currentTime, String activity, String activityResult) {
