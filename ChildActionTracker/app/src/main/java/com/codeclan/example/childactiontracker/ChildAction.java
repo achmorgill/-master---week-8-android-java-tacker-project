@@ -1,6 +1,7 @@
 package com.codeclan.example.childactiontracker;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 
 import static android.R.attr.action;
 
@@ -10,8 +11,14 @@ import static android.R.attr.action;
 
 public class ChildAction extends Action {
 
-    public ChildAction(String currentDate, String currentTime, String activity, String activityResult) {
 
-        super(currentDate,currentTime,activity,activityResult);
+
+    public ChildAction(String time, String activity, String activityResult, String category) {
+
+        super(time,activity,activityResult,category);
     }
+
+
+
 }
+

@@ -1,5 +1,6 @@
 package com.codeclan.example.childactiontracker;
 
+import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -7,29 +8,26 @@ import java.util.Date;
  * Created by user on 28/05/2017.
  */
 
-public class Action {
+public class Action implements Serializable {
 
 
     private String activity;
     private String activityResult;
-    private String currentTime;
-    private String currentDate;
+    private String time;
+    private String category;
 
 
-    public Action (String currentDate, String currentTime, String activity, String activityResult) {
-        this.currentTime = currentTime;
-        this.currentDate = currentDate;
+
+    public Action (String time, String activity, String activityResult, String category) {
+        this.time = time;
         this.activity = activity;
         this.activityResult = activityResult;
+        this.category = category;
     }
 
-
-    public String getDate() {
-        return this.currentDate;
-    }
 
     public String getTime() {
-        return this.currentTime;
+        return this.time;
     }
 
     public String getActivity() {
@@ -39,4 +37,6 @@ public class Action {
     public String getActivityResult() {
         return this.activityResult;
     }
+
+    public String getCategory() { return this.category;}
 }

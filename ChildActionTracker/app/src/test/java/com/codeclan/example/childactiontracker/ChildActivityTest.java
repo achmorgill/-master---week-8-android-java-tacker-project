@@ -16,7 +16,7 @@ public class ChildActivityTest {
 
     @Before
     public void before() {
-         childActivity = new ChildAction("12/05/17", "10:52","Breakfast","All");
+        childActivity = new ChildAction("10:52", "Breakfast", "All");
     }
 
 
@@ -30,10 +30,6 @@ public class ChildActivityTest {
         assertEquals("All", childActivity.getActivityResult());
     }
 
-    @Test
-    public void getCurrentDateTest() {
-        assertEquals("12/05/17", childActivity.getDate());
-    }
     @Test
     public void getCurrentTimeTest() {
         assertEquals("10:52", childActivity.getTime());
