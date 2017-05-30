@@ -17,7 +17,10 @@
         </activity>
         <activity android:name=".MealActivity" />
         <activity android:name=".NapActivity" />
-        <activity android:name=".PottyActivity"></activity>
+        <activity android:name=".PottyActivity" />
+        <activity android:name=".MealListActivity" />
+        <activity android:name=".NapListActivity" />
+        <activity android:name=".PottyListActivity"></activity>
     </application>
 
 </manifest>

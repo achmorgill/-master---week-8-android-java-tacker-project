@@ -11,7 +11,14 @@
     <string name="mealTimeEdit">Enter Time hh:mm</string>
     <string name="mealSaveButton">Save</string>
     <string name="pref_key">meals</string>
-    <string name="Meals" >Meals</string>
+    <string name="Meals">Meals</string>
     <string name="napTimesList">Nap Times</string>
     <string name="toiletTrainingList">Potty Training</string>
+    <string name="napTextView">Nap Details</string>
+    <string name="napTimeEdit">Enter time hh:mm</string>
+    <string name="napButtonSave">Save</string>
+    <string name="napTimeEnter">Enter time hh:mm</string>
+    <string name="pottyTextView">Potty Training Details</string>
+    <string name="pottyTimeEdit">Enter Time hh:mm</string>
+    <string name="napSaveButton">Save</string>
 </resources>

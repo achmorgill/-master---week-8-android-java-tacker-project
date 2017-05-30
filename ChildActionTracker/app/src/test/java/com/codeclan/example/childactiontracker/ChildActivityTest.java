@@ -16,7 +16,7 @@ public class ChildActivityTest {
 
     @Before
     public void before() {
-        childActivity = new ChildAction("10:52", "Breakfast", "All");
+        childActivity = new ChildAction("10:52", "Breakfast", "All", "meal");
     }
 
 

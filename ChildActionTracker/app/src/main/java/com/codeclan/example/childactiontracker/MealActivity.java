@@ -55,7 +55,7 @@ public class MealActivity extends AppCompatActivity {
 
     }
 
-    private void displayMealResultListChoices(ArrayList<String> mealResultList) {//        Spinner spinner = (Spinner) findViewById(R.id.MealActivityResult_spinner);
+    private void displayMealResultListChoices(ArrayList<String> mealResultList) {
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, mealResultList);
         mealResultSpinner.setAdapter(adapter);
 
@@ -80,7 +80,7 @@ public class MealActivity extends AppCompatActivity {
         SharedPreferences.Editor editor = this.prefs.edit();
         editor.putString("meals", this.gson.toJson(javaMealArrayList));
         editor.apply();
-        Toast.makeText(this, "Meal details added to Meal Time Page", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Meal details added", Toast.LENGTH_LONG).show();
     }
 }
 

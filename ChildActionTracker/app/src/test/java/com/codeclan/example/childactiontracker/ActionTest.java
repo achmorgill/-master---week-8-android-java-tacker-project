@@ -13,7 +13,7 @@ public class ActionTest {
 
     @Before
     public void before() {
-        action = new ChildAction("10:52", "tinkle", "potty");
+        action = new ChildAction("10:52", "tinkle", "potty","potty");
     }
 
 
@@ -30,6 +30,11 @@ public class ActionTest {
     @Test
     public void getActivityResultTest() {
         assertEquals("potty",action.getActivityResult());
+    }
+
+    @Test
+    public void getCategoryTest() {
+        assertEquals("potty",action.getCategory());
     }
 
 }

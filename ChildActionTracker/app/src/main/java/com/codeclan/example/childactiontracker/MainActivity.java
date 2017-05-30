@@ -11,8 +11,9 @@ public class MainActivity extends AppCompatActivity {
     private Button mealButton;
     private Button napButton;
     private Button pottyButton;
-//    private PageChoice choice;
-
+    private Button mealListButton;
+    private Button napListButton;
+    private Button pottyListButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,9 @@ public class MainActivity extends AppCompatActivity {
         mealButton = (Button) findViewById(R.id.meal_button);
         napButton = (Button) findViewById(R.id.nap_button);
         pottyButton = (Button) findViewById(R.id.potty_button);
+        mealListButton = (Button) findViewById(R.id.meal_list_button);
+        napListButton = (Button) findViewById(R.id.nap_list_button);
+        pottyListButton = (Button) findViewById(R.id.potty_list_button);
     }
 
 
@@ -38,6 +42,23 @@ public class MainActivity extends AppCompatActivity {
 
     public void onPottyButtonClick(View button) {
         Intent intent = new Intent(this, PottyActivity.class);
+//        intent.putExtra("pageChoice", results);
+        startActivity(intent);
+    }
+
+    public void onMealListButtonClick(View button) {
+        Intent intent = new Intent(this, MealListActivity.class);
+//        intent.putExtra("pageChoice", results);
+        startActivity(intent);
+    }
+    public void onNapListButtonClick(View button) {
+        Intent intent = new Intent(this, NapListActivity.class);
+//        intent.putExtra("pageChoice", results);
+        startActivity(intent);
+    }
+
+    public void onPottyListButtonClick(View button) {
+        Intent intent = new Intent(this, PottyListActivity.class);
 //        intent.putExtra("pageChoice", results);
         startActivity(intent);
     }
