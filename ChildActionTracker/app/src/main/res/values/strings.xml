@@ -1,14 +1,17 @@
 <resources>
     <string name="app_name">Harlequin Helper</string>
-    <string name="mealTime">Meal Time</string>
-    <string name="napButton">Nap Time</string>
-    <string name="pottyTime">Potty Training</string>
+    <string name="mealTime">Enter a Meal</string>
+    <string name="napButton">Enter a Nap</string>
+    <string name="pottyTime">Enter a Tinkle</string>
     <string name="mealViewText">Input Meal Details</string>
     <string name="meal_text_view">Meal Details</string>
     <string name="time_view">Enter Time (hh:mm)</string>
     <string name="time_text">Enter time hh:mm</string>
     <string name="mealTimeView">Enter time hh:mm</string>
     <string name="mealTimeEdit">Enter Time hh:mm</string>
-    <string name="mealSaveButton">Save Details</string>
+    <string name="mealSaveButton">Save</string>
     <string name="pref_key">meals</string>
+    <string name="Meals" >Meals</string>
+    <string name="napTimesList">Nap Times</string>
+    <string name="toiletTrainingList">Potty Training</string>
 </resources>
