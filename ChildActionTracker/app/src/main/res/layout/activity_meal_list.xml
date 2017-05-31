@@ -6,4 +6,12 @@
     android:layout_height="match_parent"
     tools:context="com.codeclan.example.childactiontracker.MealListActivity">
 
+    <TextView
+        android:id="@+id/meal_list_text_view"
+        android:layout_width="88dp"
+        android:layout_height="29dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="253dp" />
 </android.support.constraint.ConstraintLayout>

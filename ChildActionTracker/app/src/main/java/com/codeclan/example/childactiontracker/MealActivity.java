@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -27,21 +28,26 @@ public class MealActivity extends AppCompatActivity {
     private Spinner mealSpinner;
     private Spinner mealResultSpinner;
     private EditText mealTimeEdit;
+    private ImageView image;
+    private TextView titleText;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_meal);
-
-
+        setContentView(R.layout.activity_nap);
 
         ActivityList activityList = new ActivityList();
         ArrayList<String> mealTime = activityList.getMealList();
         ArrayList<String> mealTimeResult = activityList.getMealResultList();
-        mealSpinner = (Spinner) findViewById(R.id.MealActivityResult_spinner);
-        mealResultSpinner = (Spinner) findViewById(R.id.mealActivity_spinner);
-        mealTimeEdit = (EditText) findViewById(R.id.meal_time_edit);
+
+        titleText = (TextView) findViewById(R.id.title_text_view);
+        mealSpinner = (Spinner) findViewById(R.id.Activity_spinner);
+        mealResultSpinner = (Spinner) findViewById(R.id.ActivityResult_spinner);
+        mealTimeEdit = (EditText) findViewById(R.id.time_edit);
+        image = (ImageView) findViewById(R.id.image_view);
+        titleText.setText("Meal Times");
+        image.setImageResource(R.drawable.pottypic);
 
         displayMealListChoices(mealTime);
         displayMealResultListChoices(mealTimeResult);
@@ -82,5 +88,7 @@ public class MealActivity extends AppCompatActivity {
         editor.apply();
         Toast.makeText(this, "Meal details added", Toast.LENGTH_LONG).show();
     }
+
+
 }
 

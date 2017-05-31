@@ -31,35 +31,29 @@ public class MainActivity extends AppCompatActivity {
 
     public void onMealButtonClick(View button) {
         Intent intent = new Intent(this, MealActivity.class);
-//        intent.putExtra("pageChoice", results);
         startActivity(intent);
     }
     public void onNapButtonClick(View button) {
         Intent intent = new Intent(this, NapActivity.class);
-//        intent.putExtra("pageChoice", results);
         startActivity(intent);
     }
 
     public void onPottyButtonClick(View button) {
         Intent intent = new Intent(this, PottyActivity.class);
-//        intent.putExtra("pageChoice", results);
         startActivity(intent);
     }
 
     public void onMealListButtonClick(View button) {
         Intent intent = new Intent(this, MealListActivity.class);
-//        intent.putExtra("pageChoice", results);
         startActivity(intent);
     }
     public void onNapListButtonClick(View button) {
         Intent intent = new Intent(this, NapListActivity.class);
-//        intent.putExtra("pageChoice", results);
         startActivity(intent);
     }
 
     public void onPottyListButtonClick(View button) {
         Intent intent = new Intent(this, PottyListActivity.class);
-//        intent.putExtra("pageChoice", results);
         startActivity(intent);
     }
 }

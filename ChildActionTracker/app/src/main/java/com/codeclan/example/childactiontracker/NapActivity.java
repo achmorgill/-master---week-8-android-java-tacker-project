@@ -35,9 +35,9 @@ public class NapActivity extends AppCompatActivity {
         ActivityList activityList = new ActivityList();
         ArrayList<String> napTime = activityList.getNapList();
         ArrayList<String> napTimeResult = activityList.getNapResultList();
-        napSpinner = (Spinner) findViewById(R.id.napActivityResult_spinner);
-        napResultSpinner = (Spinner) findViewById(R.id.napActivity_spinner);
-        napTimeEdit = (EditText) findViewById(R.id.nap_time_edit);
+        napSpinner = (Spinner) findViewById(R.id.Activity_spinner);
+        napResultSpinner = (Spinner) findViewById(R.id.ActivityResult_spinner);
+        napTimeEdit = (EditText) findViewById(R.id.time_edit);
 
         displayNapListChoices(napTime);
         displayNapResultListChoices(napTimeResult);
@@ -54,7 +54,7 @@ public class NapActivity extends AppCompatActivity {
 
     }
 
-    public void onMealSaveButtonClick(View button) {
+    public void onNapSaveButtonClick(View button) {
         String napType = napSpinner.getSelectedItem().toString();
         String napResult = napResultSpinner.getSelectedItem().toString();
         String napTime = napTimeEdit.getText().toString();

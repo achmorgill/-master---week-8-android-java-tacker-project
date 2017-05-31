@@ -7,7 +7,7 @@
     tools:context="com.codeclan.example.childactiontracker.MealActivity">
 
     <Spinner
-        android:id="@+id/MealActivityResult_spinner"
+        android:id="@+id/mealActivityResult_spinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="8dp"
@@ -51,7 +51,7 @@
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginBottom="37dp"
-        app:layout_constraintBottom_toTopOf="@+id/MealActivityResult_spinner" />
+        app:layout_constraintBottom_toTopOf="@+id/mealActivityResult_spinner" />
 
     <TextClock
         android:id="@+id/textClock"
@@ -110,14 +110,13 @@
         android:id="@+id/meal_button"
         android:layout_width="62dp"
         android:layout_height="35dp"
-        android:onClick="onMealSaveButtonClick"
-        android:text="Button"
-        tools:text="@string/mealSaveButton"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView3" />
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="onMealSaveButtonClick"
+        android:text="@string/mealSaveButton"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
