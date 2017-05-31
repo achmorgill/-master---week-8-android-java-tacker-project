@@ -54,7 +54,7 @@ public class NapActivity extends AppCompatActivity {
 
     }
 
-    public void onNapSaveButtonClick(View button) {
+    public void onSaveButtonClick(View button) {
         String napType = napSpinner.getSelectedItem().toString();
         String napResult = napResultSpinner.getSelectedItem().toString();
         String napTime = napTimeEdit.getText().toString();

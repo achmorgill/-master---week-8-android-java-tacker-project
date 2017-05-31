@@ -67,7 +67,7 @@ public class MealActivity extends AppCompatActivity {
 
     }
 
-    public void onMealSaveButtonClick(View button) {
+    public void onSaveButtonClick(View button) {
         String mealType = mealSpinner.getSelectedItem().toString();
         String mealResult = mealResultSpinner.getSelectedItem().toString();
         String mealTime = mealTimeEdit.getText().toString();

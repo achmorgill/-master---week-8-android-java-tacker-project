@@ -1,6 +1,7 @@
 package com.codeclan.example.childactiontracker;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -62,7 +63,7 @@ public class PottyActivity extends AppCompatActivity {
 
     }
 
-    public void onPottySaveButtonClick(View button) {
+    public void onSaveButtonClick(View button) {
         String pottyType = pottySpinner.getSelectedItem().toString();
         String pottyResult = pottyResultSpinner.getSelectedItem().toString();
         String pottyTime = pottyTimeEdit.getText().toString();
@@ -74,7 +75,8 @@ public class PottyActivity extends AppCompatActivity {
         String pottysJson = this.prefs.getString("pottys", new ArrayList<Action>().toString());
         Log.d("pottys", pottysJson);
 
-        TypeToken<ArrayList<Action>> pottyArrayList = new TypeToken<ArrayList<Action>>(){};
+        TypeToken<ArrayList<Action>> pottyArrayList = new TypeToken<ArrayList<Action>>() {
+        };
         ArrayList<Action> javaPottyArrayList = this.gson.fromJson(pottysJson, pottyArrayList.getType());
         javaPottyArrayList.add(pottyActivityToBeSaved);
 
@@ -82,7 +84,9 @@ public class PottyActivity extends AppCompatActivity {
         editor.putString("pottys", this.gson.toJson(javaPottyArrayList));
         editor.apply();
         Toast.makeText(this, "potty details added", Toast.LENGTH_LONG).show();
+
     }
 
 
 }
+
