@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#76BD17"
     tools:context="com.codeclan.example.childactiontracker.NapListActivity">
 
     <TextView
@@ -16,6 +17,7 @@
         android:layout_marginTop="8dp"
         android:text="TextView"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintLeft_toLeftOf="parent"

@@ -27,11 +27,7 @@ public class MainActivity extends AppCompatActivity {
         mealListButton = (Button) findViewById(R.id.meal_list_button);
         napListButton = (Button) findViewById(R.id.nap_list_button);
         pottyListButton = (Button) findViewById(R.id.potty_list_button);
-        childNameButton = (Button) findViewById(R.id.child_name_button);
-    }
 
-    public void onChildNameButtonClick(View button) {
-        Intent intent = new Intent(this, ChildNameActivity.class);
     }
 
     public void onMealButtonClick(View button) {
