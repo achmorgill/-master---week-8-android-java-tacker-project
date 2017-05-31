@@ -20,20 +20,7 @@ public class PottyListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_potty_list);
 
-        TextView list = (TextView) findViewById(R.id.potty_list_text);
 
-
-    }
-
-    private void displayPottyTraining(ArrayList<Action> myFavourites) {
-        TextView list = (TextView) findViewById(R.id.favourite_films_text);
-        String movieTitles = "";
-
-        for (Movie movie : myFavourites) {
-            movieTitles += movie.getTitle() + " " + movie.getYear() + "\n";
-        }
-
-        list.setText(movieTitles);
     }
 }
 
@@ -44,7 +31,7 @@ public class PottyListActivity extends AppCompatActivity {
 
     //        String getSharedPrefsKey = getString(R.string.pref_key);
 //        this.prefs = getSharedPreferences(sharedPrefsKey, Context.MODE_PRIVATE);
-    String getPottysJson = this.prefs.getString("pottys", new ArrayList<Action>().toString());
-        Log.d("POTTY ", getPottysJson);
+//    String getPottysJson = this.prefs.getString("pottys", new ArrayList<Action>().toString());
+//        Log.d("POTTY ", getPottysJson);
 
 

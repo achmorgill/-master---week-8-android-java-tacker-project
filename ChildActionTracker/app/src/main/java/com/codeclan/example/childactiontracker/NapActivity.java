@@ -76,5 +76,4 @@ public class NapActivity extends AppCompatActivity {
         Toast.makeText(this, "Nap details added", Toast.LENGTH_LONG).show();
     }
 
-
 }

@@ -74,6 +74,7 @@ public class MealActivity extends AppCompatActivity {
         String category = "meal";
         Action mealActivityToBeSaved = new Action(mealTime, mealType, mealResult, category);
 
+//        String sharedPrefsKey = getString(R.string.pref_key);
         String sharedPrefsKey = getString(R.string.pref_key);
         this.prefs = getSharedPreferences(sharedPrefsKey, Context.MODE_PRIVATE);
         String mealsJson = this.prefs.getString("meals", new ArrayList<Action>().toString());
