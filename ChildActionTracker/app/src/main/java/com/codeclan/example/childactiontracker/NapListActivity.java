@@ -1,6 +1,7 @@
 package com.codeclan.example.childactiontracker;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -31,7 +32,16 @@ public class NapListActivity extends AppCompatActivity {
         TextView list = (TextView) findViewById(R.id.nap_list_view);
 
         for (Action action: javaNapArrayList) {
-            Log.d("here", action.getTime());
-    }
 
+            String napString = action.getTime() + " " + action.getActivity() + " " + action.getActivityResult();
+
+            Log.d("here", action.getTime());
+            System.out.println(napString);
+
+            Intent intent = new Intent(this, NapListActivity.class);
+            intent.putExtra("naps", napString);
+            System.out.println("we are in a loop" + napString);
+            list.setText(napString);
+        }
+    }
 }
