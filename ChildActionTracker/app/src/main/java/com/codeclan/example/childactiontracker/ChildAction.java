@@ -11,14 +11,9 @@ import static android.R.attr.action;
 
 public class ChildAction extends Action {
 
-
-
     public ChildAction(String time, String activity, String activityResult, String category) {
 
         super(time,activity,activityResult,category);
     }
-
-
-
 }
 

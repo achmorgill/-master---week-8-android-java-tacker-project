@@ -84,17 +84,7 @@ public class PottyActivity extends AppCompatActivity {
         editor.putString("pottys", this.gson.toJson(javaPottyArrayList));
         editor.apply();
         Toast.makeText(this, "potty details added", Toast.LENGTH_LONG).show();
-//this section needs to be moved to pottyListActivity
-
-//        String getSharedPrefsKey = getString(R.string.pref_key);
-//        this.prefs = getSharedPreferences(sharedPrefsKey, Context.MODE_PRIVATE);
-//        String getPottysJson = this.prefs.getString("pottys", new ArrayList<Action>().toString());
-//        Log.d("POTTY ", getPottysJson);
-//
-
 
     }
-
-
 }
 

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#76BD17"
     tools:context="com.codeclan.example.childactiontracker.MainActivity">
 
     <TextView
@@ -17,12 +18,12 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="338dp"
-        android:layout_height="241dp"
-        android:layout_marginBottom="148dp"
+        android:layout_width="346dp"
+        android:layout_height="291dp"
+        android:layout_marginBottom="127dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:background="?android:attr/colorPrimaryDark"
+        android:background="?android:attr/colorEdgeEffect"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -37,17 +38,17 @@
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         android:fontFamily="serif"
-        android:text="Daily Tracker"
+        android:text="@string/mainPageTextHeader"
         android:textAllCaps="true"
         android:textColor="@android:color/holo_red_dark"
-        android:textSize="30sp"
-        android:textStyle="bold|italic"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.055"
-        app:layout_constraintHorizontal_bias="0.504" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/meal_button"
@@ -57,10 +58,11 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryDark"
         android:onClick="onMealButtonClick"
         android:text="@string/mealTime"
         android:textAlignment="center"
-        android:textColor="@android:color/holo_red_dark"
+        android:textColor="@android:color/background_light"
         android:textStyle="bold"
         android:typeface="sans"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
@@ -68,7 +70,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/nap_button"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.461" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/potty_button"
@@ -78,84 +80,86 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryDark"
         android:onClick="onPottyButtonClick"
         android:text="@string/pottyTime"
-        android:textColor="@android:color/holo_red_dark"
+        android:textColor="@android:color/background_light"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintHorizontal_bias="0.714"
         app:layout_constraintLeft_toRightOf="@+id/nap_button"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.423" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/nap_button"
         android:layout_width="85dp"
         android:layout_height="56dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginRight="168dp"
         android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryDark"
         android:onClick="onNapButtonClick"
         android:text="@string/napButton"
-        android:textColor="@android:color/holo_red_dark"
+        android:textColor="@android:color/background_light"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.44" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/nap_list_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryDark"
         android:onClick="onNapListButtonClick"
         android:text="@string/napTimesList"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_page_text_view"
-        app:layout_constraintVertical_bias="1.0"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.982" />
 
     <Button
         android:id="@+id/potty_list_button"
         android:layout_width="126dp"
         android:layout_height="51dp"
-        android:layout_marginBottom="29dp"
-        android:layout_marginLeft="7dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="33dp"
         android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryDark"
         android:onClick="onPottyListButtonClick"
         android:text="@string/toiletTrainingList"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintLeft_toRightOf="@+id/nap_list_button"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.783" />
+        app:layout_constraintRight_toLeftOf="@+id/nap_list_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.981" />
 
     <Button
         android:id="@+id/meal_list_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="29dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginRight="32dp"
         android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryDark"
         android:onClick="onMealListButtonClick"
         android:text="@string/Meals"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.746"
         app:layout_constraintRight_toLeftOf="@+id/potty_list_button"
-        android:layout_marginRight="8dp"
-        app:layout_constraintHorizontal_bias="0.054" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.982" />
 
 </android.support.constraint.ConstraintLayout>

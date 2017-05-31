@@ -3,7 +3,6 @@ package com.codeclan.example.childactiontracker;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.Movie;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -28,15 +27,15 @@ public class MealListActivity extends AppCompatActivity {
         TypeToken<ArrayList<Action>> mealArrayList = new TypeToken<ArrayList<Action>>(){};
         ArrayList<Action> javamealArrayList = this.gson.fromJson(mealsJson, mealArrayList.getType());
 
-        TextView list = (TextView) findViewById(R.id.meal_list_view);
+        TextView list = (TextView) findViewById(R.id.time);
 
         for (Action action: javamealArrayList) {
 
             String mealString = action.getTime() + " " + action.getActivity() + " " + action.getActivityResult();
             Intent intent = new Intent(this, MealListActivity.class);
             intent.putExtra("meals", mealString);
-            System.out.println("we are in a loop" + mealString);
-            list.setText(mealString);
+//            System.out.println("we are in a loop" + mealString);
+//            list.setText(mealString);
         }
     }
 }

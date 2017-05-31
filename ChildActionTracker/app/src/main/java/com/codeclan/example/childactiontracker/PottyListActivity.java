@@ -31,7 +31,7 @@ public class PottyListActivity extends AppCompatActivity {
 
         for (Action action: javaPottyArrayList) {
 
-            String pottyString = action.getTime() + " " + action.getActivity() + " " + action.getActivityResult();
+            String pottyString = action.getTime() + " " + action.getActivity() + " in the " + action.getActivityResult();
             Intent intent = new Intent(this, PottyListActivity.class);
             intent.putExtra("pottys", pottyString);
             System.out.println("we are in a loop" + pottyString);

@@ -47,7 +47,7 @@ public class MealActivity extends AppCompatActivity {
         mealTimeEdit = (EditText) findViewById(R.id.time_edit);
         image = (ImageView) findViewById(R.id.image_view);
         titleText.setText("Meal Times");
-        image.setImageResource(R.drawable.pottypic);
+        image.setImageResource(R.drawable.vegetables);
 
         displayMealListChoices(mealTime);
         displayMealResultListChoices(mealTimeResult);
@@ -74,7 +74,6 @@ public class MealActivity extends AppCompatActivity {
         String category = "meal";
         Action mealActivityToBeSaved = new Action(mealTime, mealType, mealResult, category);
 
-//        String sharedPrefsKey = getString(R.string.pref_key);
         String sharedPrefsKey = getString(R.string.pref_key);
         this.prefs = getSharedPreferences(sharedPrefsKey, Context.MODE_PRIVATE);
         String mealsJson = this.prefs.getString("meals", new ArrayList<Action>().toString());
