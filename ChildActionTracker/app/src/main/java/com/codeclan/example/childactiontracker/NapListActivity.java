@@ -34,10 +34,6 @@ public class NapListActivity extends AppCompatActivity {
         for (Action action: javaNapArrayList) {
 
             String napString = action.getTime() + " " + action.getActivity() + " " + action.getActivityResult();
-
-            Log.d("here", action.getTime());
-            System.out.println(napString);
-
             Intent intent = new Intent(this, NapListActivity.class);
             intent.putExtra("naps", napString);
             System.out.println("we are in a loop" + napString);
