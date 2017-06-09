@@ -15,13 +15,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MealActivity" />
-        <activity android:name=".NapActivity" />
-        <activity android:name=".PottyActivity" />
-        <activity android:name=".MealListActivity" />
-        <activity android:name=".NapListActivity" />
-        <activity android:name=".PottyListActivity" />
-        <activity android:name=".ChildNameActivity"></activity>
+        <activity android:name=".MealActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".NapActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".PottyActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".MealListActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".NapListActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".PottyListActivity"
+            android:parentActivityName=".MainActivity"/>
     </application>
 
 </manifest>

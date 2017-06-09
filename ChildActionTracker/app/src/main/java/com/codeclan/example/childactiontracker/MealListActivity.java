@@ -34,7 +34,7 @@ public class MealListActivity extends AppCompatActivity {
             String mealString = action.getTime() + " " + action.getActivity() + " " + action.getActivityResult();
             Intent intent = new Intent(this, MealListActivity.class);
             intent.putExtra("meals", mealString);
-//            System.out.println("we are in a loop" + mealString);
+///            System.out.println("we are in a loop" + mealString);
 //            list.setText(mealString);
         }
     }
