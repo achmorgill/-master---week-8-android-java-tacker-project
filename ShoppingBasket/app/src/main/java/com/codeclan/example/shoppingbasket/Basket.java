@@ -1,5 +1,7 @@
 package com.codeclan.example.shoppingbasket;
 
+import android.content.ClipData;
+
 import java.util.ArrayList;
 
 /**
@@ -8,6 +10,7 @@ import java.util.ArrayList;
 
 class Basket {
     ArrayList<ItemDetail> itemList = new ArrayList<>();
+    private int a2PercentDiscountForLoyaltyCardsFinalTotal;
 
 
     public int getBasketSize() {
@@ -19,13 +22,52 @@ class Basket {
     }
 
     public void removeItemFromBasket(ItemDetail itemDetail) {
-        System.out.println("hello");
-        System.out.println(itemList);
 
-        for (ItemDetail itemDetail: itemList) {
-            System.out.println(itemList)
+        for (ItemDetail value : itemList) {
+            if (value == itemDetail) {;
+                itemList.remove(value);
+            }
+        }
+
+    }
+
+    public void emptyBasket() {
+        itemList.clear();
+    }
+
+    public int getValueOfBasket() {
+        int basketTotal = 0;
+        for (ItemDetail value : itemList) {
+            if (value.getDiscountCode() == "BOGOF") {
+                int number = 1 + (value.getNumber() - 1) / 2;
+                basketTotal += (value.getCost() * number);
+            }
+            else {
+                basketTotal += (value.getCost() * value.getNumber());
+            }
+        }
+        return basketTotal;
+    }
+
+    public int get10PercentDiscountWhenTotalOver20(int basketTotal) {
+        int newTotal = (basketTotal / 11) * 10;
+        return newTotal;
+    }
+
+    public int get2PercentDiscountForLoyaltyCardsFinalTotal(int basketTotal) {
+        int finalTotal = basketTotal * 100 /102;
+        return finalTotal;
+    }
+
+    public int getCostOfBasketFinal(boolean loyaltyCard) {
+        int basketTotal = getValueOfBasket();
+        if (basketTotal > 2000) {
+            basketTotal = get10PercentDiscountWhenTotalOver20(basketTotal);
+        }
+        if (loyaltyCard == true) {
+            basketTotal = get2PercentDiscountForLoyaltyCardsFinalTotal(basketTotal);
 
         }
-//        itemList.remove(itemList(0));
+        return basketTotal;
     }
 }

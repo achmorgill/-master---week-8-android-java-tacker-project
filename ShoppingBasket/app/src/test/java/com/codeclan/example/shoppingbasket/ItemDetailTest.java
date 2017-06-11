@@ -4,6 +4,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
+import static junit.framework.Assert.assertNotNull;
+import static junit.framework.Assert.assertTrue;
 
 /**
  * Created by user on 09/06/2017.
@@ -14,11 +16,12 @@ public class ItemDetailTest {
 
     @Before
     public void before() {
-        itemDetail = new ItemDetail("sausages", 2, 1);
+        itemDetail = new ItemDetail("sausages", 200, 1, "BOGOF");
     }
 
     @Test
     public void itemDetailNotNullTest() {
+        assertNotNull(itemDetail);
     }
 
     @Test
@@ -28,12 +31,17 @@ public class ItemDetailTest {
 
     @Test
     public void costTest() {
-        assertEquals(2,itemDetail.getCost());
+        assertEquals(200,itemDetail.getCost());
     }
 
     @Test
     public void numberTest() {
         assertEquals(1, itemDetail.getNumber());
+    }
+
+    @Test
+    public void discountCodeTest() {
+        assertEquals("BOGOF", itemDetail.getDiscountCode());
     }
 
 }
